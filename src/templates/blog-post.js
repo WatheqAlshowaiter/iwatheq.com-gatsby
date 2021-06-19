@@ -61,7 +61,7 @@ export default ({ data }) => {
       <Content>
         <MarkedHeader>{post.frontmatter.title}</MarkedHeader>
         <HeaderDate>
-          {post.frontmatter.date} - {post.fields.readingTime.text}
+          {post.frontmatter.date}
         </HeaderDate>
         <MarkdownContent dangerouslySetInnerHTML={{ __html: post.html }} />
       </Content>
@@ -75,14 +75,9 @@ export const pageQuery = graphql`
       html
       excerpt(pruneLength: 160)
       frontmatter {
-        date(formatString: "DD MMMM, YYYY")
+        date(formatString: "DD/MM/YYYY")
         path
         title
-      }
-      fields {
-        readingTime {
-          text
-        }
       }
     }
   }

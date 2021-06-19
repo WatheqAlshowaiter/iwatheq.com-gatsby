@@ -11,7 +11,7 @@ const Content = styled.div`
 
 const NavLink = styled(Link)`
   color: black;
-  margin-left: 15px;
+  margin-right: 15px;
   text-decoration: none;
   display: inline-block;
   position: relative;
@@ -31,7 +31,7 @@ const NavLink = styled(Link)`
 
   :hover::after {
     transform: scaleX(1);
-    transform-origin: bottom left;
+    transform-origin: bottom right;
   }
 `
 
@@ -62,7 +62,7 @@ const GitHubLink = styled.a`
 `
 
 const HomeLink = styled(NavLink)`
-  margin-left: 0;
+  margin-right: 0;
 `
 
 const SiteHeader = styled.header`
@@ -76,11 +76,8 @@ const Header = ({ siteTitle }) => (
   <SiteHeader>
     <Content>
       <p>
-        <HomeLink to="/">{siteTitle}</HomeLink>
-        <NavLink to="/blog">Blog</NavLink>
-        <GitHubLink href="https://github.com/niklasmtj/gatsby-starter-julia">
-          GitHub
-        </GitHubLink>
+        <HomeLink to="/">الرئيسية</HomeLink>
+        <NavLink to="/blog">المدونة</NavLink>
       </p>
     </Content>
   </SiteHeader>

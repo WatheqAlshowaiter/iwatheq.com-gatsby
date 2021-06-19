@@ -38,15 +38,15 @@ const IndexPage = ({ data }) => {
     <Layout>
       <SEO title="Blog" />
       <Content>
-        <h1>Blog</h1>
+        <h1>المدونة</h1>
         {data.allMarkdownRemark.edges
-          .filter(({ node }) => {
-            const rawDate = node.frontmatter.rawDate
-            const date = new Date(rawDate)
-            return date < new Date()
-          })
+          // .filter(({ node }) => {
+          //   const rawDate = node.frontmatter.rawDate
+          //   const date = new Date(rawDate)
+          //   return date < new Date()
+          // })
           .map(({ node }) => (
-            <div key={node.id}>
+            <div key={node.id} style={{marginTop:'20px'}}>
               <Link
                 to={node.frontmatter.path}
                 css={css`
@@ -58,9 +58,7 @@ const IndexPage = ({ data }) => {
               </Link>
               <div>
                 <ArticleDate>{node.frontmatter.date}</ArticleDate>
-                <ReadingTime> - {node.fields.readingTime.text}</ReadingTime>
               </div>
-              <p>{node.excerpt}</p>
             </div>
           ))}
       </Content>
@@ -87,17 +85,13 @@ export const query = graphql`
           id
           frontmatter {
             title
-            date(formatString: "DD MMMM, YYYY")
+            date(formatString: "DD/MM/YYYY")
             rawDate: date
             path
           }
           fields {
             slug
-            readingTime {
-              text
-            }
           }
-          excerpt
         }
       }
     }

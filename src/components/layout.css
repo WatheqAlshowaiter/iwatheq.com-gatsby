@@ -7,6 +7,7 @@ body {
   font-family: "Nunito", "Avenir", "Helvetica", "sans-serif";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  direction: rtl;
 }
 article,
 aside,
@@ -97,6 +98,7 @@ pre,
 samp {
   font-family: monospace, monospace;
   font-size: 1em;
+  direction: ltr;
 }
 figure {
   margin: 1em 40px;
