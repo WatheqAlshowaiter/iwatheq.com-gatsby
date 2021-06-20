@@ -27,13 +27,24 @@ module.exports = {
     {
       resolve: `gatsby-transformer-remark`,
       options: {
-        plugins: [`gatsby-remark-reading-time`, {
+        plugins: [
+          "gatsby-remark-relative-images",
+          {
+            resolve: "gatsby-remark-images",
+            options: {
+              maxWidth: 750,
+              linkImagesToOriginal: false,
+            },
+          },
+          `gatsby-remark-reading-time`, {
           resolve: `gatsby-remark-prismjs`,
           options: {
             aliases:{sh: "bash", js:"javascript"},
             showLineNumbers: true,
           }
-        }],
+        },
+
+      ],
       },
     },
     {
