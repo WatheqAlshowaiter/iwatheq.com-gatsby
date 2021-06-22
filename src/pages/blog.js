@@ -36,7 +36,7 @@ const ReadingTime = styled.h5`
 const IndexPage = ({ data }) => {
   return (
     <Layout>
-      <SEO title="Blog" />
+      <SEO title="المدونة" />
       <Content>
         <h1>المدونة</h1>
         {data.allMarkdownRemark.edges
