@@ -67,7 +67,7 @@ module.exports = {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `مدونة واثق`,
-        short_name: `starter`,
+        short_name: `مدونة واثق`,
         start_url: `/`,
         background_color: `#663399`,
         theme_color: `#663399`,
