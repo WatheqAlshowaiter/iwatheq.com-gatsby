@@ -3,6 +3,7 @@ import PropTypes from "prop-types"
 import { StaticQuery, graphql } from "gatsby"
 import styled from "@emotion/styled"
 
+
 const Container = styled.div`
   text-align: center;
 `
@@ -41,6 +42,7 @@ const LandingBio = () => (
     render={data => (
       <OuterContainer>
         <Container>
+
           <NameHeader>{data.site.siteMetadata.title}</NameHeader>
           <Description>{data.site.siteMetadata.subtitle}</Description>
           <p className="yellow-highlight">الموقع قيد الإنجاز وستجد هنا بعض التحسينات إن شاء الله </p>

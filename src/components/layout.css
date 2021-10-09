@@ -1,4 +1,47 @@
-code {
+@font-face {
+  font-family: "DubaiW23-Regular";
+
+  src: url("../styles/fonts/DubaiW23-Regular.woff2") format("woff2"),
+    /* Super Modern Browsers */ url("../styles/fonts/DubaiW23-Regular.woff")
+      format("woff"),
+    /* Pretty Modern Browsers */ url("../styles/fonts/DubaiW23-Regular.ttf")
+      format("truetype"); /* Safari, Android, iOS */
+}
+
+@font-face {
+  font-family: "DubaiW23-Medium";
+
+  src: url("../styles/fonts/DubaiW23-Medium.woff2") format("woff2"),
+    /* Super Modern Browsers */ url("../styles/fonts/DubaiW23-Medium.woff")
+      format("woff"),
+    /* Pretty Modern Browsers */ url("../styles/fonts/DubaiW23-Medium.ttf")
+      format("truetype"); /* Safari, Android, iOS */
+}
+
+@font-face {
+  font-family: "DubaiW23-Bold";
+
+  src: url("../styles/fonts/DubaiW23-Bold.woff2") format("woff2"),
+    /* Super Modern Browsers */ url("../styles/fonts/DubaiW23-Bold.woff")
+      format("woff"),
+    /* Pretty Modern Browsers */ url("../styles/fonts/DubaiW23-Bold.ttf")
+      format("truetype"); /* Safari, Android, iOS */
+}
+
+body {
+  text-align: right;
+  font-family: "DubaiW23-Regular", "Tahoma", sans-serif;
+}
+
+h1, h2, h3, strong {
+	font-family: 'DubaiW23-Bold';
+}
+
+h4, h5, h6{
+  font-family: "DubaiW23-Medium", "Tahoma", sans-serif;
+}
+
+/* code {
   background-color: hsla(0, 0%, 0%, 0.04);
 }
 
@@ -667,4 +710,4 @@ a.yellow-highlight-links{
 
 a > code:hover {
   text-decoration: underline;
-}
+} */
