@@ -47,7 +47,7 @@ const LandingBio = () => (
           <Description>{data.site.siteMetadata.subtitle}</Description>
           <p className="yellow-highlight">الموقع قيد الإنجاز وستجد هنا بعض التحسينات إن شاء الله </p>
 
-          <p> يمكنك التواصل معي عبر الإيميل: watheq[dot]alshowaiter[at]gmail[dot]com  أو <a href="https://twitter.com/watheq_show" target="_blank" className="yellow-highlight-links">تويتر</a>  أو <a href="https://www.facebook.com/watheq.show/" target="_blank" className="yellow-highlight-links">فيس بوك</a></p>
+          <p>يمكنك التواصل معي عبر الإيميل: watheq[dot]alshowaiter[at]gmail[dot]com  أو <a href="https://twitter.com/watheq_show" target="_blank" className="yellow-highlight-links">تويتر</a>  أو <a href="https://www.facebook.com/watheq.show/" target="_blank" className="yellow-highlight-links">فيس بوك</a></p>
           <p></p>
           <p></p>
         </Container>
